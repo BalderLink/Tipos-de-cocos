@@ -30,7 +30,7 @@
             <h2>Tipos de Coco</h2>
             <div class="cards">
                 <article class="card">
-                    <img src="/imagens/coco verde.webp" alt="Coco Verde">
+                    <img id= "verde" src="/imagens/coco verde.png" alt="Coco Verde">
                     <h3>Coco Verde</h3>
                     <p>Ótimo para consumo da água, é refrescante e muito consumido em praias.</p>
                 </article>
@@ -61,6 +61,19 @@
     <footer>
         <p>&copy; 2025 Tipos de Coco. Todos os direitos reservados.</p>
     </footer>
+
+<script>
+  const img = document.getElementById('verde');
+
+  img.addEventListener('click', () => {
+    // Alterna a classe rotacionar para ativar/desativar rotação
+    if (img.classList.contains('rotacionar')) {
+      img.classList.remove('rotacionar');
+    } else {
+      img.classList.add('rotacionar');
+    }
+  });
+</script>
 
 </body>
 </html>
